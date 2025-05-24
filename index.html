@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Akash</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Home / Header -->
+  <header id="home">
+      <div class="logo top">
+          <h2 class="profile_name">Akash</h2>
+          <div class="contact_info">
+              <div><img src="images/gmail.png" alt="email icon" /> <span>xyz@gmail.com</span> </div>
+              <div><img src="images/phone.png" alt="phone icon" /> <span>12XXXXX638</span></div>
+          </div>
+      </div>
+      <nav class="menu top">
+          <div class="topmenu"><a href="#about-me">About Me</a></div>
+          <div class="topmenu"><a href="#skills">Skills</a></div>
+          <div class="topmenu"><a href="#projects">Projects</a></div>
+          <div class="topmenu"><a href="#recommendations">Recommendations</a></div>
+      </nav>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about-me" class="flex pd-default">
+    <div class="flex">
+      <img src="images/profile.png" alt="profile image" class="profile_image" />
+    </div>
+    <div class="details">
+        <h1>Hi, I'm Akash! <span>👋</span></h1>
+        <p>I am a web developer passionate about building responsive and user-friendly web applications. This portfolio showcases my skills, projects, and recommendations from clients and colleagues.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="">
+    <h2>Skills</h2>
+    <div class="all_skills flex">
+      <div class="skill"><img src="images/html5.png" alt="HTML" /><p>HTML<br>3 years</p></div>
+      <div class="skill"><img src="images/css.png" alt="CSS" /><p>CSS<br>3 years</p></div>
+      <div class="skill"><img src="images/js.png" alt="JS" /><p>JavaScript<br>3 years</p></div>
+      <div class="skill"><img src="images/react.png" alt="React" /><p>React<br>1 year</p></div>
+      <div class="skill"><img src="images/nodejs.png" alt="Node.js" /><p>Node.js<br>1 year</p></div>
+      <div class="skill"><img src="images/django.png" alt="Django" /><p>Django<br>2 year</p></div>
+      <div class="skill"><img src="images/java.png" alt="CPP" /><p>CPP<br>2 year</p></div>
+      <div class="skill"><img src="images/cpp.png" alt="Java" /><p>Java<br>2 year</p></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Caterer Management System</h3>
+      <p>A web platform where users can create customized menus for events. It provides features such as caterer registration, food selection, and user ordering. Built using Django, MySQL, HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project-card">
+      <h3>Movie Ticket Booking System</h3>
+      <p>A desktop application that allows users to select a theater, choose a movie, and book tickets. Implemented using Java Swing and JDBC, following the DAO pattern with interfaces and POJO classes for enhanced flexibility and scalability.</p>
+    </div>
+    <div class="project-card">
+      <h3>3D Home Viewer</h3>
+      <p>A web application that accepts house blueprints from users and manually converts them into 3D models. After processing, users receive a code via email to access their 3D home view online without installing any application.</p>
+    </div>
+  </section>
+
+
+  <!-- Recommendations Section -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div id="all_recommendations">
+      <div class="recommendation">“ Akash is a great team player and adapts quickly to changing requirements. ”</div>
+      <div class="recommendation">“ Working with Akash was a fantastic experience. Always eager to help and take initiatives. ”</div>
+      <div class="recommendation">“ Excellent problem-solver with a keen eye for clean design and usability. ”</div>
+    </div>
+  </section>
+
+  <!-- Form to add a Recommendation -->
+  <section id="add-recommendation">
+    <h2>Leave a Recommendation</h2>
+    <form id="recommendationForm">
+        <input type="text" id="name" placeholder="Name (Optional)"><br>
+        <textarea id="message"  placeholder="Message" required></textarea><br>
+        <button id="recommend_btn" type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Popup -->
+  <div id="popup">
+    <p>Thank you for your recommendation!</p>
+  </div>
+
+  <!-- Home Icon -->
+  <footer>
+    <a href="#home">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-circle-fill arrow" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+      </svg>
+    </a>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
