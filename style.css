@@ -1,0 +1,290 @@
+/* style.css */
+
+/* General styles */
+:root{
+  --primary-color:#80007f;
+  --secondary-color:#80007f10;
+  --tertiary-color:#50004f;
+  --shadow-color:#80007f45;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+  color: #333;
+  min-width: 425px;
+}
+
+header{
+    padding: 0.5em;
+    width: 100%;
+    display:flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+}    
+
+h2{
+  color: var(--primary-color);
+}
+
+.top{
+    padding: 0.5em;
+    color: white;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.logo{
+    flex-direction: column;
+    align-content: baseline;
+}
+
+.menu{
+    align-items: center;
+    align-content: center;
+}
+
+.profile_name{
+  color:white;
+  margin: 0;
+  padding: 0;
+}
+
+.product:hover .product-nav{
+    display: block;
+}
+
+.contact_info div > img{
+        width:1.5rem;
+        height: 1.5rem;
+}
+
+.contact_info > div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.topmenu a{
+    color:white;
+    text-decoration: none;
+}
+
+.topmenu:hover{
+    font-style: italic;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+/* About me */
+.flex{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  flex-direction: row;
+}
+
+.profile_image{
+  width:50%;
+  max-width: 800px;
+  min-width: 100px;
+  height: auto;
+  display: block;
+}
+
+.pd-default{
+  padding: 2em;
+}
+
+.details{
+  text-align: justify;
+}
+
+.details h1{
+  color: var(--primary-color);
+}
+
+/* Skills section */
+
+
+#skills {
+  text-align: center;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.all_skills{
+  flex-wrap: wrap;
+
+}
+
+.skill{
+  /* 0px 2px 5px rgba(0, 0, 0, 0.1);; */
+  width: 100px;
+  padding: 2vw;
+  margin:10px;
+  
+  /* border: 1px solid black; */
+  box-shadow: 3px 3px 5px 0px var(--shadow-color);
+  background: var(--secondary-color);
+}
+
+.skill img{
+  width: 100%;
+  max-width: 400px;
+  min-width: 50px;
+  height: auto;
+  display: block;
+}
+
+/* .skill-card {
+  display: inline-block;
+  width: 150px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+} */
+
+.skill-card img {
+  width: 40px;
+  height: auto;
+}
+
+.skill:hover{
+    box-shadow: 12px 15px 5px 0px var(--shadow-color);
+    /* border: 1px solid black; */
+    font-weight: bold;
+}
+
+/* Projects section */
+#projects {
+  padding: 40px;
+  background-color: var(--secondary-color);
+}
+
+.project-card {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Recommendations section */
+#recommendations {
+  padding: 40px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#all_recommendations{ 
+    display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.recommendation {
+  display: flex;
+  width: 250px;
+  word-wrap: break-word;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f3e5f5;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+}
+
+/* .all_skills{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+} */
+
+/* Add recommendation form */
+#add-recommendation {
+  text-align: center;
+  padding: 40px;
+  background-color: var(--secondary-color);
+}
+
+#add-recommendation input,
+#add-recommendation textarea {
+  width: 60%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#recommend_btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#recommend_btn:hover {
+  background-color: var(--tertiary-color);
+}
+
+/* Popup */
+#popup {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--tertiary-color);
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: opacity 1s linear, visibility 1s linear;
+}
+#popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* Home icon */
+
+footer{
+  text-align: end;
+  padding: 10px;
+  background-color: var(--primary-color);
+}
+
+.arrow{
+  cursor: pointer;
+  fill:white
+}
+
+
+/* media query optional */
+
+@media (max-width:800px){
+  .menu{
+    flex-direction: column;
+  }
+  
+}
